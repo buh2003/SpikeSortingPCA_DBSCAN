@@ -6,3 +6,9 @@ Software designed to handle raw data formats exported to Matlab format from Labc
 IMPORTANT: Export data in the following order: Raw trace, Force Trace, Displacement Trace.
 
 IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
+
+Three demos are provided for each indenter:
+
+1) Spike Sorting Demo (start here)
+
+2) S
