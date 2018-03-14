@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Trial Averaging, Dose response Curves, and Non-Linear regression
+% Ben Hoffman
+% 08.24.16
+%
+% Modeled using Boltzmann equation
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% -------- Set figure title names and dock all figures
+dataName1 = '042716 37 Rleg leg2 trial1 analyzed'; % add Trial 1 file name!
+dataName2 = '042716 37 Rleg leg2 trial2 analyzed'; % add Trial 2 file name! (If necessary)
+dataName3 = '042716 37 Rleg leg2 trial3 analyzed'; % add Trial 3 file name! (If necessary)
+dataName4 = '042716 37 Rleg leg2 trial4 analyzed'; % add Trial 4 file name! (If necessary)
+set(0,'DefaultFigureWindowStyle','docked')
+%% -------- Step 1: Prepare Data from each trial for averaging
+%  -------- Step 1: Number of Trials
+Trials = 2; % ENTER NUMBER OF TRIALS
+%%  -------- Step 1-1: Load Trial 1, Round Disp
+[Dy_Trial1,St_Trial1] = import_data(dataName1);
+Dynamic = Dy_Trial1; Static = St_Trial1; 
+%%  -------- Step 1-2: Load Trial 2, Round Disp
+[Dy_Trial2,St_Trial2] = import_data(dataName2);
+Dynamic = [Dynamic; Dy_Trial2]; Static = [Static; St_Trial2];
+%%  -------- Step 1-3: Load Trial 3, Round Disp
+[Dy_Trial3,St_Trial3] = import_data(dataName3);
+Dynamic = [Dynamic; Dy_Trial3]; Static = [Static; St_Trial3];
+%%  -------- Step 1-4: Load Trial 4, Round Disp
+[Dy_Trial4,St_Trial4] = import_data(dataName4);
+Dynamic = [Dynamic; Dy_Trial4]; Static = [Static; St_Trial4];
+%% -------- Step 2: Combine trials, perform stats
+%  -------- Step 2-1: Generate IFF values
+[Dynamic, Static] = generate_IFF(Dynamic, Static);
+%  -------- Step 2-2: Generate aggregate means and standard deviations from rounded displacement grouping
+[Dynamic_agg, Static_agg] = aggregate_trials(Dynamic, Static);
+%% -------- Step 3: Perform Boltzmann fit
+[Dynamic_IFF_fit, Dynamic_gof, Static_IFF_fit, Static_gof] = boltz_fit(Dynamic_agg, Static_agg, dataName1); % dataName1 must have the word 'trial'
+%% -------- Step 4: Save data to .xlsx
+save_boltz_data(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName1)
+
+
+
+
