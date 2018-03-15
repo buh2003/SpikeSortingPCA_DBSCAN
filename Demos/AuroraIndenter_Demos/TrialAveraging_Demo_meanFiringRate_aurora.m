@@ -24,11 +24,11 @@ Dynamic= Dy_Trial1; Mfr = mfr_trial1;
 [Dy_Trial2, mfr_trial2] = import_data_mfr(dataName2);
 Dynamic = [Dynamic; Dy_Trial2]; Mfr = [Mfr; mfr_trial2];
 %%  -------- Step 1-3: Load Trial 3, Round Disp
-[Dy_Trial3,St_Trial3] = import_data(dataName3);
-Mfr = [Mfr; Dy_Trial3]; Static = [Static; St_Trial3];
+[Dy_Trial3, mfr_trial3] = import_data_mfr(dataName3);
+Dynamic = [Dynamic; Dy_Trial3]; Mfr = [Mfr; mfr_trial3];
 %%  -------- Step 1-4: Load Trial 4, Round Disp
-[Dy_Trial4,St_Trial4] = import_data(dataName4);
-Mfr = [Mfr; Dy_Trial4]; Static = [Static; St_Trial4];
+[Dy_Trial4, mfr_trial4] = import_data_mfr(dataName4);
+Dynamic = [Dynamic; Dy_Trial4]; Mfr = [Mfr; mfr_trial4];
 %% -------- Step 2: Combine trials, perform stats
 %  -------- Step 2-1: Generate IFF values
 [Dynamic, Mfr] = generate_IFF(Dynamic, Mfr);
