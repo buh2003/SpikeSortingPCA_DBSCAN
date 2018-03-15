@@ -1,5 +1,5 @@
 # SpikeSortingPCA_DBSCAN
-Spike sorting implemented with principal component analysis (PCA) and density-based spatial clustering of applications with noise (DBSCAN) for extracellular differential electrode recordings. The primary functionality is for analyzing mechanical stimulation experiments, but the package can be adapted for any type of experiment.
+Spike sorting implemented with principal component analysis (PCA) and density-based spatial clustering of applications with noise (DBSCAN) for extracellular differential electrode recordings. The primary functionality of this software package is for analyzing mechanical stimulation experiments, but it can be adapted for any type of experimental protocol.
 
 IMPORTANT: Tested on Matlab R2017b
 
@@ -9,7 +9,9 @@ Bioinformatics Toolbox, Statistics and Machine Learning Toolbox, Signal Processi
 
 
 
-## Software designed to handle raw data formats exported to Matlab format from Labchart software.
+## The software is designed to handle raw data formats exported to Matlab from Labchart software.
+
+IMPORTANT: Currently only supports data aquired with a 20 kHz sampling rate.
 
 IMPORTANT: Export data in the following order: Raw trace, Force Trace, Displacement Trace.
 
