@@ -9,13 +9,14 @@ Bioinformatics Toolbox, Statistics and Machine Learning Toolbox, Signal Processi
 
 
 
-Software designed to handle raw data formats exported to Matlab format from Labchart software.
+#Software designed to handle raw data formats exported to Matlab format from Labchart software.
 
 IMPORTANT: Export data in the following order: Raw trace, Force Trace, Displacement Trace.
 
 IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
-Three demos are provided for each indenter:
+
+#Three demos are provided for each indenter:
 
 1) Spike Sorting Demo (start here)
 
