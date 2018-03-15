@@ -24,8 +24,9 @@ IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
 2) Trial Averaging Demos (2 implemented for Aurora):
 
-  - TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
-  - TrialAveraging_Demo_meanFiringRate_Aurora # Use this demo instead if you want to analyze Mean Firing Rate (skip if not)
+    - TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
+    
+    - TrialAveraging_Demo_meanFiringRate_Aurora # Use this demo instead if you want to analyze Mean Firing Rate (skip if not)
 
 3) SummaryFigureDemo_ForAurora # Use this demo to make a figure quality summary figure
 
