@@ -22,6 +22,10 @@ IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
 1) Spike_Sort_Demo_Aurora # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
 
+    - Try with GerlingIndenter Demo Data. Process each trial data individually, then combine in the below 'Trial Averaging Demo'
+        
+    - To load data simply load Demo Data into Matlab workspace. The variable with raw data is called "data".
+
 2) Trial Averaging Demos (2 implemented for Aurora):
 
     - TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
@@ -33,6 +37,10 @@ IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 ### GERLING INDENTER
 
 1) Spike_Sort_Demo_GerlingIndenter # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
+
+    - Try with GerlingIndenter Demo Data. Process each trial data individually, then combine in the below 'Trial Averaging Demo'
+        
+    - To load data simply load Demo Data into Matlab workspace. The variable with raw data is called "data".
 
 2) TrialAveraging_Demo_4PLfit_GerlingIndenter # Use this demo next if you want to compare Dynamic and Static Firing Rates
 
