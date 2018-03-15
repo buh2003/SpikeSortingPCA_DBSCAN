@@ -1,5 +1,5 @@
 # SpikeSortingPCA_DBSCAN
-Spike sorting implemented with principal component analysis (PCA) and density-based spatial clustering of applications with noise (DBSCAN) for extracellular differential electrode recordings. Primary functionality is analyzing mechanical stimulation experiments, but can be adapted for any type of experiment.
+Spike sorting implemented with principal component analysis (PCA) and density-based spatial clustering of applications with noise (DBSCAN) for extracellular differential electrode recordings. The primary functionality is for analyzing mechanical stimulation experiments, but the package can be adapted for any type of experiment.
 
 IMPORTANT: Tested on Matlab R2017b
 
