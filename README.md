@@ -9,26 +9,27 @@ Bioinformatics Toolbox, Statistics and Machine Learning Toolbox, Signal Processi
 
 
 
-# Software designed to handle raw data formats exported to Matlab format from Labchart software.
+## Software designed to handle raw data formats exported to Matlab format from Labchart software.
 
 IMPORTANT: Export data in the following order: Raw trace, Force Trace, Displacement Trace.
 
 IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
 
-# Demos are provided for each indenter (Aurora Indenter or Gerling Indenter):
+## Demos are provided for each indenter (Aurora Indenter or Gerling Indenter):
 
-AURORA INDENTER
+### AURORA INDENTER
 
 1) Spike_Sort_Demo_Aurora # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
 
-2.1) TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
+2) Trial Averaging Demos (2 implemented for Aurora):
 
-2.2) TrialAveraging_Demo_meanFiringRate_Aurora # Use this demo instead if you want to analyze Mean Firing Rate (skip if not)
+  - TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
+  - TrialAveraging_Demo_meanFiringRate_Aurora # Use this demo instead if you want to analyze Mean Firing Rate (skip if not)
 
 3) SummaryFigureDemo_ForAurora # Use this demo to make a figure quality summary figure
 
-GERLING INDENTER
+### GERLING INDENTER
 
 1) Spike_Sort_Demo_GerlingIndenter # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
 
