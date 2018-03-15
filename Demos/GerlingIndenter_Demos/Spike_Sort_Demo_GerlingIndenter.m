@@ -2,13 +2,13 @@
 %
 % Skin Nerve Spike Sorting and Data Analysis
 % Ben Hoffman
-% 08.09.16S101R
+% 08.09.16
 %
 % With PCA and DBSCAN sorting
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% -------- Set figure title names and dock all figures
-dataName = '010918 wt AM fiber4'; % add file Name!
+dataName = 'GerlingIndenter_DemoData_trial1'; % add file Name!
 set(0,'DefaultFigureWindowStyle','docked')
 %% -------- Step 1: Prepare Data
 %  -------- Step 1-1: Split Response, Force and Displacement data
@@ -20,7 +20,7 @@ title(dataName)
 savefig([dataName 'ALL' '.fig']);
 %% -------- Step 2: Define target peak shape
 %  -------- Step 2-1: Set Bandpass for Spike Peaks
-[Spike_Train, Spike_Shape] = Spike_Bandpass_SNP(All_short, 1500, 50, 48); % ENTER PEAK BANDPASS
+[Spike_Train, Spike_Shape] = Spike_Bandpass_SNP(All_short, 1500, 100, 48); % ENTER PEAK BANDPASS
 %  -------- Step 2-2: Curve Smoothing
 Spike_Shape_Smoothed = Curve_smoothing_SNP(Spike_Shape, 1, 60, 1);
 Spike_Shape_Recentered = Recenter_Peaks_SNP(Spike_Shape_Smoothed, 1, 60, 12);
@@ -29,7 +29,7 @@ Spike_Shape_Recentered = Recenter_Peaks_SNP(Spike_Shape_Smoothed, 1, 60, 12);
 [PCA_weights, PCA_variable, latent] = pca(Spike_Shape_Recentered(1:40,:));
 figure; plot(latent, 'ro');
 % -------- 3-2: Perform DBSCAN clustering
-idx = DBSCAN(PCA_weights(:,1:2),0.005,3); % (PCA1 and PCA2, epsilon, minimum spikes per cluster)  
+idx = DBSCAN(PCA_weights(:,1:2),0.003,3); % (PCA1 and PCA2, epsilon, minimum spikes per cluster)  
 Spikes_Sorted = [Spike_Shape_Recentered(1:62,:); idx'];
 % -------- 3-3: Sorting Summary Plot
 PCA_DBSCAN_Summary(All_short.Response, All_short.Displacement, Spike_Shape_Recentered,...
