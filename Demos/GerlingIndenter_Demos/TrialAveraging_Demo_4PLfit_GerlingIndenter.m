@@ -42,4 +42,4 @@ Dynamic = [Dynamic; Dy_Trial4]; Static = [Static; St_Trial4];
 % For Mac
 save_boltz_data(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName_agg)
 % For PC
-save_boltz_data_windows(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName_agg)
+%save_boltz_data_windows(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName_agg)
