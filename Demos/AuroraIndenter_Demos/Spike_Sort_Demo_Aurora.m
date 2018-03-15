@@ -73,7 +73,7 @@ latencies=latencytospike(Disp_points, Output_R_boolean, 20000);
 % For Mac
 save_file_mac_aurora(ALL_ISI_OF,StimPhase_ISI_OF,Dynamic_ISI_OF,Late_Static_ISI_OF, End_ISI_OF, Disp_points,latencies, dataName);
 % For PC
-save_file_windows_aurora(ALL_ISI_OF,StimPhase_ISI_OF,Dynamic_ISI_OF,Late_Static_ISI_OF, End_ISI_OF, Disp_points,latencies, dataName);
+%save_file_windows_aurora(ALL_ISI_OF,StimPhase_ISI_OF,Dynamic_ISI_OF,Late_Static_ISI_OF, End_ISI_OF, Disp_points,latencies, dataName);
 
 
 
