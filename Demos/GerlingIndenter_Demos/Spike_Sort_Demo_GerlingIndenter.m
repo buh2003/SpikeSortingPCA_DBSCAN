@@ -2,6 +2,7 @@
 %
 % Skin Nerve Spike Sorting and Data Analysis
 % Ben Hoffman
+% 08.09.16S101R
 %
 % With PCA and DBSCAN sorting
 %
@@ -61,4 +62,8 @@ Disp_points = Displacement_inflections(Output_D, 1, 10000, 60000, 80000);
 IFF_plot(IFF_out,150);
 savefig([dataName ' IFF' '.fig']);
 %% -------- Step 7: Save data to .xlsx
+% Choose Mac or PC script
+% For Mac
 save_file(ALL_ISI_OF,StimPhase_ISI_OF,Dynamic_ISI_OF,Late_Static_ISI_OF, End_ISI_OF, Disp_points, dataName);
+% For PC
+save_file_windows(ALL_ISI_OF,StimPhase_ISI_OF,Dynamic_ISI_OF,Late_Static_ISI_OF, End_ISI_OF, Disp_points, dataName);
