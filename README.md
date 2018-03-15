@@ -16,10 +16,22 @@ IMPORTANT: Export data in the following order: Raw trace, Force Trace, Displacem
 IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
 
-# Three demos are provided for each indenter:
+# Demos are provided for each indenter (Aurora Indenter or Gerling Indenter):
 
-1) Spike Sorting Demo (start here)
+AURORA INDENTER
 
-2) Trial Averaging Demo
+1) Spike_Sort_Demo_Aurora # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
 
-3) Summary Figure Demo
+2.1) TrialAveraging_Demo_DynamicStatic_Aurora # Use this demo next if you want to compare Dynamic and Static Firing Rates (skip if not)
+
+2.2) TrialAveraging_Demo_meanFiringRate_Aurora # Use this demo instead if you want to analyze Mean Firing Rate (skip if not)
+
+3) SummaryFigureDemo_ForAurora # Use this demo to make a figure quality summary figure
+
+GERLING INDENTER
+
+1) Spike_Sort_Demo_GerlingIndenter # Start here. This demo takes you through raw data processing, spike sorting, and data analysis
+
+2) TrialAveraging_Demo_4PLfit_GerlingIndenter # Use this demo next if you want to compare Dynamic and Static Firing Rates
+
+3) Summary_Figure_Demo_GerlingIndenter # Use this demo to make a figure quality summary figure
