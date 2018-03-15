@@ -42,4 +42,4 @@ Dynamic = [Dynamic; Dy_Trial4]; Mfr = [Mfr; mfr_trial4];
 % For Mac
 save_boltz_data(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Mfr_IFF_fit, Mfr_gof, Mfr_agg, dataName_agg)
 % For PC
-save_boltz_data_windows(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Mfr_IFF_fit, Mfr_gof, Mfr_agg, dataName_agg)
+%save_boltz_data_windows(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Mfr_IFF_fit, Mfr_gof, Mfr_agg, dataName_agg)
