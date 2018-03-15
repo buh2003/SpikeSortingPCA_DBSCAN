@@ -38,4 +38,8 @@ Dynamic = [Dynamic; Dy_Trial4]; Static = [Static; St_Trial4];
 [Dynamic_IFF_fit, Dynamic_gof, Static_IFF_fit, Static_gof] = sig_fit(Dynamic_agg, Static_agg, dataName1); % dataName1 must have the word 'trial'
 [Dynamic_IFF_fit_force, Dynamic_gof_force, Static_IFF_fit_force, Static_gof_force] = sig_fit_force(Dynamic_agg, Static_agg, dataName1);
 %% -------- Step 4: Save data to .xlsx
+% Choose Mac or PC script
+% For Mac
 save_boltz_data(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName_agg)
+% For PC
+save_boltz_data_windows(Dynamic_IFF_fit, Dynamic_gof, Dynamic_agg, Static_IFF_fit, Static_gof, Static_agg, dataName_agg)
