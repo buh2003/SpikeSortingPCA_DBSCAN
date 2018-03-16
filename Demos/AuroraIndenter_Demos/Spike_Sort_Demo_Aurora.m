@@ -39,7 +39,7 @@ PCA_DBSCAN_Summary(All_short.Response, All_short.Displacement, Spike_Shape_Recen
     PCA_weights, Spikes_Sorted, idx, dataName);
 %savefig([dataName ' PCA_DBSCAN' '.fig']);
 %% -------- Step 4: Extract Cluster of Spikes
-Cluster_Num = 2; % ENTER CLUSTER TO EXTRACT
+Cluster_Num = 1; % ENTER CLUSTER TO EXTRACT
 [Extracted_Spikes, Show_Spike_Train] = Extract_Sorted_Spikes_PCA_DBSCAN(Spike_Train, Spikes_Sorted,Cluster_Num); 
 %% -------- Step 5: Compare to Electrical Stimulation ### SKIP THIS SECTION FOR NOW
 %%%%%% !!!!!!!! FIRST LOAD IN the 'data' variable from the electrical stimulation file !!!!!! %%%%%%%%
