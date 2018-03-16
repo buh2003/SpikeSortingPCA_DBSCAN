@@ -38,15 +38,15 @@ PCA_DBSCAN_Summary(All_short.Response, All_short.Displacement, Spike_Shape_Recen
 %% -------- Step 4: Extract Cluster of Spikes
 Cluster_Num = 1; % ENTER CLUSTER TO EXTRACT
 [Extracted_Spikes, Show_Spike_Train] = Extract_Sorted_Spikes_PCA_DBSCAN(Spike_Train, Spikes_Sorted,Cluster_Num); 
-%% -------- Step 5: Compare to Electrical Stimulation
+%% -------- Step 5: Compare to Electrical Stimulation #### SKIP THIS SECTION FOR NOW
 %%%%%% !!!!!!!! FIRST LOAD IN the 'data' variable from the electrical stimulation file !!!!!! %%%%%%%%
-[Elec_Spike_Train, Elec_Spikes_Sorted] = electrical_stimulation(data,Extracted_Spikes, 0.04, dataName); %enter epsilon value
+%[Elec_Spike_Train, Elec_Spikes_Sorted] = electrical_stimulation(data,Extracted_Spikes, 0.04, dataName); %enter epsilon value
 %% ------- 5-1: Compare to Electrical Stimulation
-Cluster_Num = 2; % ENTER CLUSTER TO EXTRACT
-[Elec_Extracted_Spikes, Elec_Show_Spike_Train] = Extract_Sorted_Spikes_PCA_DBSCAN(Elec_Spike_Train,...
-    Elec_Spikes_Sorted,Cluster_Num); 
+%Cluster_Num = 2; % ENTER CLUSTER TO EXTRACT
+%[Elec_Extracted_Spikes, Elec_Show_Spike_Train] = Extract_Sorted_Spikes_PCA_DBSCAN(Elec_Spike_Train,...
+%    Elec_Spikes_Sorted,Cluster_Num); 
 % -------- 5-2: Compare evoked spikes to electrically evoked spikes
-figure; plot(Extracted_Spikes(1:60,:),'b'); hold on; plot(Elec_Extracted_Spikes(1:60,:),'r');
+%figure; plot(Extracted_Spikes(1:60,:),'b'); hold on; plot(Elec_Extracted_Spikes(1:60,:),'r');
 %savefig([dataName ' electricalComp' '.fig']);
 %% -------- Step 6: Data Analysis
 %  -------- Step 6-1: Reduce spike train file size; plot R,F,D and Raster
