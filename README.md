@@ -52,4 +52,8 @@ IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 - Benjamin Uri Hoffman, Columbia University
 - Ellen A. Lumpkin, Columbia University
 
+# Citation:
+
+Hoffman, Benjamin U. & Lumpkin, Ellen A. (2018, March 20). buh2003/SpikeSortingPCA_DBSCAN: SpikeSortingPCA_DBSCAN v1.0.0 (Version v1.0.0). Zenodo. http://doi.org/10.5281/zenodo.1204652
+
 
