@@ -48,7 +48,7 @@ IMPORTANT: Select demo based on indenter used (GerlingIndenter, AuroraIndenter)
 
 3) Summary_Figure_Demo_GerlingIndenter # Use this demo to make a figure quality summary figure
 
-### Authors:
+# Authors:
 - Benjamin Uri Hoffman, Columbia University
 - Ellen A. Lumpkin, Columbia University
 
